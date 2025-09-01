@@ -20,7 +20,10 @@ for _ in range(k - 1):
     x = int(input())
     assert 0 < x < p, "no cheating!"
     print(evaluate_poly(f, x))
+    
+print(f'{SECRET = }')
 
 if int(input("secret? ")) == SECRET:
     FLAG = open("flag.txt").read()
     print(FLAG)
+    
